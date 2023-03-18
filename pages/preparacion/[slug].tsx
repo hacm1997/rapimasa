@@ -9,7 +9,7 @@ const Preparacion = (props: any) => {
         <>
 
             <Layout>
-                <Single title={props.data[0].title} time={props.data[0].time} content1={props.data[0].content1} content2={props.data[0].content2} ingredientes={props.data[0].ingredientes}/>
+                <Single title={props.data ? props.data[0].title :null} time={props.data ? props.data[0].time : null} content1={props.data ? props.data[0].content1 : null} content2={props.data ? props.data[0].content2 : null} ingredientes={props.data ? props.data[0].ingredientes : null}/>
             </Layout>
 
         </>

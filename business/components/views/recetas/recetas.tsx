@@ -41,7 +41,7 @@ export default Recetas;
 
 export async function getStaticPaths() {
     try {
-        const res = await fetch("http://localhost:3000/api/recetas")
+        const res = await fetch(`${process.env.NEXT_PUBLIC_DOMAIN_URL as string}/api/recetas`)
         const data = await res.json()
         const paths = data.map(({id}: any) => ({params: {id: `${id}`}}))
         return {
@@ -57,7 +57,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({params: {data}}: any) {
     data = "Hola"
     /*try {
-        const res = await fetch("http://localhost:3000/api/recetas" + params.id)
+        const res = await fetch(`${process.env.NEXT_PUBLIC_DOMAIN_URL as string}/api/recetas`+ params.id)
         const data = await res.json()
         return {
             props: {

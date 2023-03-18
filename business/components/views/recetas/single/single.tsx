@@ -23,7 +23,6 @@ const Single: React.FC<Props> = ({title, time, content1, content2, ingredientes}
                             <h1><a href="#"><i className='bx bx-chevron-left'></i>
                                 <span>Recetas que tenemos para ti con Rapimasa</span></a></h1>
                         </div>
-                        <Nav/>
                     </div>
 
                     <div className={styles.cardGeneral}>

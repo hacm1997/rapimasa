@@ -23,7 +23,7 @@ const Recetas = (props: any) => {
 
                             {props.data.map((item: any, index: any) => (
                                 <div key={index}>
-                                    <Card name={item.name} content={item.content} url={item.link}/>
+                                    <Card name={item.name} content={item.content} url={`${process.env.NEXT_PUBLIC_DOMAIN_URL as string}${item.link}`}/>
                                 </div>
                             ))}
                         </div>
