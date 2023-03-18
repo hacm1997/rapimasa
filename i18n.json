@@ -1,0 +1,10 @@
+{
+  "defaultLocale": "es",
+  "locales": ["es", "en"],
+  "pages": {
+    "*": ["footer", "navbar","form"],
+    "/": ["home"],
+    "/recetas/[id]": ["recetas"],
+    "/preparacion/[id]": ["preparacion"]
+  }
+}

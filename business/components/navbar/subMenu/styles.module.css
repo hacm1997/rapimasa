@@ -1,0 +1,52 @@
+.subMenu {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    height: 90px;
+    position: relative;
+    top: -25px;
+    border-radius: 0 0 30px 30px;
+    z-index: 100;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.general {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    top: 10px;
+}
+
+.item a {
+    font-size: 18px;
+    color: #3f3f3f;
+    text-decoration: none;
+}
+
+.active {
+    color: #f3b620 !important;
+    font-weight: bold;
+}
+
+@media (max-width: 1296px) {
+    .subMenu {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1146px) {
+    .subMenu {
+        width: 100%;
+
+    }
+}

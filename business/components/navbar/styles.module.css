@@ -1,0 +1,148 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30px;
+    width: 100%;
+}
+
+.general {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    height: 120px;
+    width: 80%;
+    background-color: #9a1828;
+    border-radius: 30px;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+.menu a {
+    color: #FFFFFF;
+    transition: 1s;
+}
+
+.menu a:hover {
+    color: #f3b620;
+}
+
+.active {
+    color: #f3b620 !important;
+    font-weight: bold;
+}
+
+.botonMovil {
+    display: none;
+}
+
+.market{
+    color: #FFFFFF;
+    font-size: 26px;
+    margin-top: -5px;
+    cursor: pointer;
+}
+.market sup{
+    font-size: 16px;
+    color: #f3b620;
+    font-weight: bold;
+}
+
+@media (max-width: 1296px) {
+    .general {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1146px) {
+    .general {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .nav {
+        top: 0;
+    }
+}
+
+@media (max-width: 1082px) {
+    .general {
+        justify-content: space-between;
+        padding: 20px 50px;
+    }
+
+    .botonMovil {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        background-color: #FFFFFF;
+        color: #173A83;
+        border: none;
+        font-size: 17px;
+        font-weight: bold;
+        cursor: pointer;
+        z-index: 102;
+        transition: 0.5s;
+    }
+
+    .menu {
+        background-color: #9a1828;
+        position: fixed;
+        right: 0;
+        min-height: 100vh;
+        height: 100%;
+        width: 0;
+        top: 120px;
+        transition: 0.5s;
+        z-index: 102;
+    }
+
+    .menu div {
+        opacity: 0;
+    }
+
+    .menuActive {
+        background-color: #9a1828;
+        position: fixed;
+        right: 0;
+        min-height: 100vh;
+        height: 100%;
+        width: 50%;
+        top: 0px;
+        transition: 0.5s;
+        z-index: 102;
+    }
+
+    .menuActive div a {
+        color: #ffffff;
+        transition: 1s;
+    }
+
+    .menu div {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 136px 50px;
+        list-style: none;
+        font-size: 17px;
+        color: #ffffff;
+    }
+
+    .menuActive {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 136px 50px;
+        list-style: none;
+        font-size: 17px;
+        color: #ffffff;
+    }
+}
